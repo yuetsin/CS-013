@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form Form1 
-   Caption         =   "Ñ¡µçÄÔ"
+   Caption         =   "é€‰ç”µè„‘"
    ClientHeight    =   3015
    ClientLeft      =   120
    ClientTop       =   465
@@ -8,7 +8,7 @@ Begin VB.Form Form1
    LinkTopic       =   "Form1"
    ScaleHeight     =   3015
    ScaleWidth      =   8850
-   StartUpPosition =   3  '´°¿ÚÈ±Ê¡
+   StartUpPosition =   3  'çª—å£ç¼ºçœ
    Begin VB.TextBox Text2 
       Height          =   2655
       Left            =   4920
@@ -18,7 +18,7 @@ Begin VB.Form Form1
       Width           =   3855
    End
    Begin VB.CommandButton Command1 
-      Caption         =   "Á¢¼´¹ºÂò"
+      Caption         =   "ç«‹å³è´­ä¹°"
       Height          =   855
       Left            =   2640
       TabIndex        =   10
@@ -26,7 +26,7 @@ Begin VB.Form Form1
       Width           =   1815
    End
    Begin VB.CheckBox Check2 
-      Caption         =   "ÈíÇı"
+      Caption         =   "è½¯é©±"
       Height          =   255
       Left            =   240
       TabIndex        =   9
@@ -34,7 +34,7 @@ Begin VB.Form Form1
       Width           =   2295
    End
    Begin VB.CheckBox Check1 
-      Caption         =   "Êó±ê"
+      Caption         =   "é¼ æ ‡"
       Height          =   375
       Left            =   240
       TabIndex        =   8
@@ -79,7 +79,7 @@ Begin VB.Form Form1
       Left            =   240
       List            =   "Ch_7_1.frx":0002
       TabIndex        =   1
-      Text            =   "ÃÀµÛÁ¼ĞÄÏë"
+      Text            =   "ç¾å¸è‰¯å¿ƒæƒ³"
       Top             =   480
       Width           =   1575
    End
@@ -92,7 +92,7 @@ Begin VB.Form Form1
       Width           =   975
    End
    Begin VB.Label Label2 
-      Caption         =   "ÄÚ´æÈİÁ¿"
+      Caption         =   "å†…å­˜å®¹é‡"
       Height          =   375
       Left            =   240
       TabIndex        =   2
@@ -100,7 +100,7 @@ Begin VB.Form Form1
       Width           =   1815
    End
    Begin VB.Label Label1 
-      Caption         =   "Æ·ÅÆ"
+      Caption         =   "å“ç‰Œ"
       Height          =   375
       Left            =   240
       TabIndex        =   0
@@ -120,32 +120,32 @@ Private Sub Command1_Click()
         Text2 = "Manifest here:" & vbCrLf
         Text2 = Text2 & Combo1.Text & vbCrLf & Text1 & vbCrLf
         If Check1.Value Then
-         Text2 = Text2 & "Êó±ê" & vbCrLf
+         Text2 = Text2 & "é¼ æ ‡" & vbCrLf
          End If
          If Check2.Value Then
-         Text2 = Text2 & "ÈíÇı" & vbCrLf
+         Text2 = Text2 & "è½¯é©±" & vbCrLf
          End If
          If Option1.Value Then
-         Text2 = Text2 & "CPU: Pantium II" & vbCrLf
+         Text2 = Text2 & "CPU: Pentium II" & vbCrLf
          ElseIf Option2.Value Then
-         Text2 = Text2 & "CPU: Pantium III" & vbCrLf
+         Text2 = Text2 & "CPU: Pentium III" & vbCrLf
          ElseIf Option3.Value Then
-         Text2 = Text2 & "CPU: Intel i9 7980XE" & vbCrLf
+         Text2 = Text2 & "CPU: Intel i9-7980XE" & vbCrLf
          End If
     End If
 End Sub
 
 Private Sub Form_Load()
-Combo1.AddItem ("ÃÀµÛÁ¼ĞÄÏë")
-Combo1.AddItem ("¼éÈçÅÍÊ¯Ë¶")
-Combo1.AddItem ("Íµ¹¤¼õÁÏ³")
-Combo1.AddItem ("×ö¹¤ÔüÔü´¬")
-Combo1.AddItem ("ÈËÉµÇ®¶à´÷")
-Combo1.AddItem ("Ìú°åĞÜÕÆÆÕ")
-Combo1.AddItem ("×Ú½ÌĞÅÑö¹û")
-Combo1.AddItem ("×¨ÒµÌùÅÆ¶û")
-Combo1.AddItem ("Í¬·½ÓÂÆø¶à")
-Combo1.AddItem ("É¢ÈÈËõË®ĞÇ")
+Combo1.AddItem ("ç¾å¸è‰¯å¿ƒæƒ³")
+Combo1.AddItem ("å¥¸å¦‚ç£çŸ³ç¡•")
+Combo1.AddItem ("å·å·¥å‡æ–™ç¢")
+Combo1.AddItem ("åšå·¥æ¸£æ¸£èˆ¹")
+Combo1.AddItem ("äººå‚»é’±å¤šæˆ´")
+Combo1.AddItem ("é“æ¿ç†ŠæŒæ™®")
+Combo1.AddItem ("å®—æ•™ä¿¡ä»°æœ")
+Combo1.AddItem ("ä¸“ä¸šè´´ç‰Œå°”")
+Combo1.AddItem ("åŒæ–¹å‹‡æ°”å¤š")
+Combo1.AddItem ("æ•£çƒ­ç¼©æ°´æ˜Ÿ")
 Option1 = True
 End Sub
 
